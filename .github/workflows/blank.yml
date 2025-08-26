@@ -1,0 +1,27 @@
+name :  "amit_pipeline"
+
+on:
+  push:
+    branches:
+    -  main 
+jobs:
+      terraformInit:
+        name: Terraforom Init
+        runs-on:  amit_lebel
+        steps:
+         -  name:  amit_labels
+            run: echo "amit_lebel"
+
+      terraformPlan:
+        name: Terraforom plan
+        runs-on:  amit_lebel
+        steps:
+         -  name:  amit_lebel
+            run: echo "amit_lebel"  
+
+      terraformApply:
+        name: Terraforom Apply
+        runs-on:  amit_lebel
+        steps:
+         -  name:  amit_lebel
+            run: echo "amit_lebel"
